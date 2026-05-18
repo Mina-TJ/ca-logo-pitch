@@ -1,441 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Corporate Analytics Logo — Mina T. Jouybari</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --jdi-green:      #059666;
-      --jdi-green-dark: #047a53;
-      --jdi-green-light:#e6f7f2;
-      --jdi-green-pale: #f0faf6;
-      --text-dark:      #1a1a1a;
-      --text-mid:       #444;
-      --text-light:     #777;
-      --border:         #e0e0e0;
-      --white:          #ffffff;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: var(--white); color: var(--text-dark); font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; }
+￼
+Mina Tavakkoli Jouybari
+Associate Data Analyst. Co-op. J.D. Irving, Limited
+The Design
+Colours
+Values
+Scoring
+About
+Corporate Analytics. Logo Contest 2026
+MY LOGO DESIGN
+A Logo Built for Corporate Analytics
+Every shape, every colour, and every line in this logo has a purpose. It tells the story of what Corporate Analytics does. Turning complex data into clear decisions, for every part of JDI.
+Designer. Mina Tavakkoli Jouybari
+Role. Associate Data Analyst. Co-op
+Team. Corporate Irving Group Moncton
+Company. J.D. Irving, Limited
+￼
+CORPORATE ANALYTICS
 
-    /* NAV */
-    .topbar {
-      background: var(--white); border-bottom: 2px solid var(--jdi-green);
-      padding: 14px 48px; display: flex; align-items: center;
-      justify-content: space-between; position: sticky; top: 0; z-index: 100;
-    }
-    .topbar-left { display: flex; align-items: center; gap: 12px; }
-    .topbar-diamond {
-      width: 26px; height: 26px; background: var(--jdi-green);
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); flex-shrink: 0;
-    }
-    .topbar-name { font-size: 13px; font-weight: 600; }
-    .topbar-role { font-size: 11px; color: var(--text-light); }
-    .topbar-badge {
-      font-size: 11px; font-weight: 500;
-      background: var(--jdi-green-light); color: var(--jdi-green-dark);
-      padding: 5px 14px; border-radius: 20px; letter-spacing: 0.03em;
-    }
-    @media(max-width:600px){ .topbar { padding: 12px 20px; } .topbar-badge { display: none; } }
+￼
+01. THE DESIGN
+What Does Each Part Mean?
+I didn't pick these shapes randomly. Each element represents something real about what Corporate Analytics does every day at JDI.
+🌐
+THE GLOBE
+JDI operates across many industries. From forestry to transportation to consumer products. Corporate Analytics supports all of them. The globe shows that our work has no limits. We serve the whole business.
+📊
+THE BAR CHART
+The bars sit right at the center of the globe. Because data is at the center of everything CA does. Each bar is taller than the last, showing we are always improving and always raising the standard.
+↗️
+THE RISING ARROW
+The arrow moves upward and forward. It says: we don't just look at past numbers. We use data to move the business forward. Analytics that lead to real action and better results.
+🟢
+THE GREEN COLOUR
+The logo uses a deep, rich green. A deliberate choice to give Corporate Analytics its own visual identity, while staying true to the JDI green family. Think of it as CA's own shade of Irving.
 
-    /* HERO */
-    header {
-      max-width: 1100px; margin: 0 auto;
-      padding: 80px 48px 64px;
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 60px; align-items: center;
-      opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
-    }
-    @media(max-width:720px){ header { grid-template-columns: 1fr; padding: 48px 24px; } }
+￼
+02. BRAND COLOURS
+Rooted in the JDI Green Family
+The logo colour was chosen from within JDI's green identity. A deeper, richer tone that gives Corporate Analytics its own presence while staying unmistakably part of the Irving brand.
 
-    .hero-tag {
-      display: inline-block; font-size: 11px; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.15em;
-      color: var(--jdi-green); background: var(--jdi-green-light);
-      padding: 5px 14px; border-radius: 2px; margin-bottom: 22px;
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(34px, 5vw, 54px); line-height: 1.15;
-      margin-bottom: 18px;
-    }
-    h1 em { font-style: normal; color: var(--jdi-green); }
-    .hero-desc { font-size: 15px; color: var(--text-mid); line-height: 1.8; margin-bottom: 32px; max-width: 460px; }
-    .hero-meta { display: flex; flex-direction: column; gap: 5px; }
-    .hero-meta span { font-size: 12px; color: var(--text-light); }
-    .hero-meta strong { color: var(--text-dark); }
+JDI Official Green
+#059666
 
-    .logo-frame {
-      width: 280px; height: 280px;
-      background: var(--jdi-green-pale);
-      border: 1px solid #c0e0d4; border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      padding: 28px; margin: auto; position: relative;
-    }
-    .logo-frame img { width: 100%; height: 100%; object-fit: contain; }
-    .logo-frame-label {
-      position: absolute; bottom: -13px; left: 50%; transform: translateX(-50%);
-      background: var(--jdi-green); color: white;
-      font-size: 10px; font-weight: 600; letter-spacing: 0.1em;
-      text-transform: uppercase; padding: 4px 18px;
-      border-radius: 20px; white-space: nowrap;
-    }
+CA Logo Green
+#1a6b35
 
-    /* SECTIONS */
-    .section { max-width: 1100px; margin: 0 auto; padding: 72px 48px; }
-    @media(max-width:720px){ .section { padding: 48px 24px; } }
-    .divider { max-width: 1100px; margin: 0 auto; height: 1px; background: var(--border); }
+Background
+#0d0d0d
 
-    .section-tag {
-      font-size: 11px; font-weight: 600; text-transform: uppercase;
-      letter-spacing: 0.15em; color: var(--jdi-green); margin-bottom: 10px;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(26px, 4vw, 38px); margin-bottom: 12px; line-height: 1.2;
-    }
-    .section-intro { font-size: 15px; color: var(--text-mid); max-width: 620px; line-height: 1.8; margin-bottom: 44px; }
+White
+#ffffff
+Why a slightly different green? The logo uses a deeper shade within JDI's green family. This was intentional. Just as different Irving divisions carry their own identity, Corporate Analytics has its own shade. Distinct enough to stand out. Close enough to always feel like home.
 
-    /* STORY CARDS */
-    .story-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
-    .story-card {
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: 6px; padding: 28px 22px;
-      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-    }
-    .story-card:hover { border-color: var(--jdi-green); box-shadow: 0 4px 18px rgba(5,150,102,0.09); transform: translateY(-2px); }
-    .card-icon { font-size: 26px; margin-bottom: 14px; }
-    .card-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
-    .card-text { font-size: 14px; color: var(--text-mid); line-height: 1.75; }
+￼
+03. JDI VALUES
+Every JDI Value, In One Logo
+JDI has 8 core values. I connected each one to a part of this logo. Because a good logo should carry the culture of the company it represents.
+🎯
+Results Driven
+The rising arrow. Every insight should lead to a result, not just a report
+🚀
+Continuous Improvement & Innovation
+The ascending bars. Always growing, always reaching higher than before
+🤝
+Customer Focus
+The globe. CA serves every division of JDI, holding everything together
+⚡
+Fast & Flexible
+Clean, simple design. Easy to read in one second, on any screen
+✅
+Integrity
+Staying within JDI's colour family. Honest, no tricks, no shortcuts
+⭐
+Quality Products & Service
+A professionally designed logo, ready to use at any size on any medium
+👥
+People & Teamwork
+The orbit ring. CA connects and wraps around every team at JDI
+🌱
+Health, Safety & Environment
+Green. The colour of growth, nature, and responsible progress
 
-    /* PALETTE */
-    .palette-wrap { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
-    .swatch { display: flex; flex-direction: column; align-items: center; gap: 7px; }
-    .swatch-color { width: 68px; height: 52px; border-radius: 6px; border: 1px solid var(--border); }
-    .swatch-name { font-size: 11px; font-weight: 500; color: var(--text-mid); }
-    .swatch-hex { font-size: 10px; color: var(--text-light); font-family: monospace; }
-    .palette-note {
-      background: var(--jdi-green-pale); border-left: 3px solid var(--jdi-green);
-      padding: 16px 20px; border-radius: 0 4px 4px 0;
-      font-size: 14px; color: var(--text-mid); max-width: 620px;
-    }
-    .palette-note strong { color: var(--jdi-green-dark); }
+￼
+04. JURY CRITERIA
+How This Logo Scores
+The jury evaluates four things. Here is how this logo addresses each one honestly.
+20
 
-    /* VALUES */
-    .values-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
-    .value-row {
-      display: flex; gap: 14px; align-items: flex-start;
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: 6px; padding: 18px 20px;
-      transition: border-color 0.2s;
-    }
-    .value-row:hover { border-color: var(--jdi-green); }
-    .value-icon {
-      width: 32px; height: 32px; border-radius: 50%;
-      background: var(--jdi-green-light);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 14px; flex-shrink: 0;
-    }
-    .value-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
-    .value-link { font-size: 13px; color: var(--text-mid); line-height: 1.55; }
+⭐ ALIGNMENT
+Designed within JDI's green colour family and connected to all 8 company values. The highest priority criterion
+15
 
-    /* SCORING */
-    .score-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 20px; }
-    .score-card {
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: 6px; padding: 24px 20px; text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .score-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
-    .score-card.top { border-color: var(--jdi-green); background: var(--jdi-green-pale); }
-    .score-number {
-      font-family: 'Playfair Display', serif;
-      font-size: 50px; line-height: 1; color: var(--jdi-green); margin-bottom: 8px;
-    }
-    .score-card.top .score-number { color: var(--jdi-green-dark); }
-    .score-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
-    .score-desc { font-size: 12px; color: var(--text-mid); line-height: 1.55; }
-    .score-tip {
-      background: var(--jdi-green-light); border-radius: 6px;
-      padding: 16px 20px; font-size: 14px; color: var(--jdi-green-dark);
-      display: flex; gap: 10px; align-items: flex-start;
-    }
+ORIGINALITY
+Globe combined with an analytics chart. A fresh way to show what CA does for the whole business
+10
 
-    /* CLOSING */
-    .closing { background: var(--jdi-green); padding: 80px 48px; text-align: center; color: white; }
-    .closing h2 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 42px); color: white; margin-bottom: 20px; }
-    .closing p { font-size: 16px; line-height: 1.8; opacity: 0.92; max-width: 580px; margin: 0 auto 32px; }
-    .closing-name { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; opacity: 0.75; }
+IMPACT
+One glance tells you: data, global reach, forward momentum. Simple and memorable
+5
 
-    /* FOOTER */
-    footer {
-      border-top: 1px solid var(--border); padding: 22px 48px;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 10px;
-    }
-    footer span { font-size: 12px; color: var(--text-light); }
-    footer a { color: var(--jdi-green); text-decoration: none; font-weight: 500; }
+EXECUTION
+PNG format, transparent background, professional quality. Ready for any document or screen
 
-    /* ANIMATIONS */
-    @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-  </style>
-</head>
-<body>
+￼
+05. ABOUT THE DESIGNER
+A Unique Perspective
+MT
+Mina Tavakkoli Jouybari
+Associate Data Analyst. Co-op. Corporate Irving Group Moncton
+With a background in Computer Engineering and International Business Management, I bring both a technical and strategic eye to everything I do. Designing this logo was my way of understanding what Corporate Analytics really means to JDI. I combined data thinking with visual storytelling to create something that feels like it has always belonged here. Not something that needs to be explained. Something that speaks for itself.
 
-<!-- NAV -->
-<div class="topbar">
-  <div class="topbar-left">
-    <div class="topbar-diamond"></div>
-    <div>
-      <div class="topbar-name">Mina T. Jouybari</div>
-      <div class="topbar-role">Associate Data Analyst - Co-op · J.D. Irving, Limited</div>
-    </div>
-  </div>
-  <div class="topbar-badge">Corporate Analytics · Logo Contest 2026</div>
-</div>
-
-<!-- HERO -->
-<header>
-  <div>
-    <div class="hero-tag">My Logo Design</div>
-    <h1>A Logo Built for <em>Corporate Analytics</em></h1>
-    <p class="hero-desc">
-      Every shape, every colour, and every line in this logo has a purpose.
-      It tells the story of what Corporate Analytics does — turning complex data
-      into clear decisions, for every part of JDI.
-    </p>
-    <div class="hero-meta">
-      <span><strong>Designer:</strong> Mina T. Jouybari</span>
-      <span><strong>Role:</strong> Associate Data Analyst - Co-op</span>
-      <span><strong>Team:</strong> Corporate Analytics, J.D. Irving, Limited</span>
-    </div>
-  </div>
-  <div>
-    <div class="logo-frame">
-      <img src="Final_LOGO__Mina_T__Jouybari.png" alt="Corporate Analytics Logo" onerror="this.style.opacity='0'"/>
-      <div class="logo-frame-label">Corporate Analytics</div>
-    </div>
-  </div>
-</header>
-
-<div class="divider"></div>
-
-<!-- SECTION 1: DESIGN STORY -->
-<div class="section">
-  <p class="section-tag reveal">01 — The Design</p>
-  <h2 class="reveal">What Does Each Part Mean?</h2>
-  <p class="section-intro reveal">
-    I didn't pick these shapes randomly. Each element represents something real
-    about what Corporate Analytics does every day at JDI.
-  </p>
-  <div class="story-grid">
-    <div class="story-card reveal">
-      <div class="card-icon">🌐</div>
-      <div class="card-title">The Globe</div>
-      <div class="card-text">JDI operates across many industries — from forestry to transportation to consumer products. Corporate Analytics supports all of them. The globe shows that our work has no limits. We serve the whole business.</div>
-    </div>
-    <div class="story-card reveal">
-      <div class="card-icon">📊</div>
-      <div class="card-title">The Bar Chart</div>
-      <div class="card-text">The bars sit right at the center of the globe — because data is at the center of everything CA does. Each bar is taller than the last, showing we are always improving and always raising the standard.</div>
-    </div>
-    <div class="story-card reveal">
-      <div class="card-icon">↗️</div>
-      <div class="card-title">The Rising Arrow</div>
-      <div class="card-text">The arrow moves upward and forward. It says: we don't just look at past numbers — we use data to move the business forward. Analytics that lead to real action and better results.</div>
-    </div>
-    <div class="story-card reveal">
-      <div class="card-icon">🟢</div>
-      <div class="card-title">The Green Colour</div>
-      <div class="card-text">This is JDI's own green — the same colour on every Irving sign and truck. I used the colour that already belongs to this company, because this logo should feel like it has always been here.</div>
-    </div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- SECTION 2: BRAND COLOURS -->
-<div class="section">
-  <p class="section-tag reveal">02 — Brand Colours</p>
-  <h2 class="reveal">Straight from the JDI Brand</h2>
-  <p class="section-intro reveal">
-    The colours in this logo come directly from J.D. Irving's official brand.
-    No guessing, no creative liberties — just the colours JDI already owns and trusts.
-  </p>
-  <div class="palette-wrap reveal">
-    <div class="swatch">
-      <div class="swatch-color" style="background:#059666;"></div>
-      <div class="swatch-name">JDI Green</div>
-      <div class="swatch-hex">#059666</div>
-    </div>
-    <div class="swatch">
-      <div class="swatch-color" style="background:#047a53;"></div>
-      <div class="swatch-name">Deep Green</div>
-      <div class="swatch-hex">#047a53</div>
-    </div>
-    <div class="swatch">
-      <div class="swatch-color" style="background:#1a1a1a;"></div>
-      <div class="swatch-name">Near Black</div>
-      <div class="swatch-hex">#1a1a1a</div>
-    </div>
-    <div class="swatch">
-      <div class="swatch-color" style="background:#ffffff; border:1px solid #ddd;"></div>
-      <div class="swatch-name">White</div>
-      <div class="swatch-hex">#ffffff</div>
-    </div>
-  </div>
-  <div class="palette-note reveal">
-    <strong>Why does this matter?</strong> A logo that uses the company's exact brand colours
-    can go on any JDI document, dashboard, or presentation without looking out of place.
-    It already belongs here.
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- SECTION 3: VALUES -->
-<div class="section">
-  <p class="section-tag reveal">03 — JDI Values</p>
-  <h2 class="reveal">Every JDI Value, In One Logo</h2>
-  <p class="section-intro reveal">
-    JDI has 8 core values. I connected each one to a part of this logo —
-    because a good logo should carry the culture of the company it represents.
-  </p>
-  <div class="values-grid">
-    <div class="value-row reveal">
-      <div class="value-icon">🎯</div>
-      <div>
-        <div class="value-name">Results Driven</div>
-        <div class="value-link">The rising arrow — every insight should lead to a result, not just a report</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">🚀</div>
-      <div>
-        <div class="value-name">Continuous Improvement & Innovation</div>
-        <div class="value-link">The ascending bars — always growing, always reaching higher than before</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">🤝</div>
-      <div>
-        <div class="value-name">Customer Focus</div>
-        <div class="value-link">The globe — CA serves every division of JDI, holding everything together</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">⚡</div>
-      <div>
-        <div class="value-name">Fast & Flexible</div>
-        <div class="value-link">Clean, simple design — easy to read in one second, on any screen</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">✅</div>
-      <div>
-        <div class="value-name">Integrity</div>
-        <div class="value-link">Using JDI's real brand colours — honest, no tricks, no shortcuts</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">⭐</div>
-      <div>
-        <div class="value-name">Quality Products & Service</div>
-        <div class="value-link">A professionally designed logo, ready to use at any size on any medium</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">👥</div>
-      <div>
-        <div class="value-name">People & Teamwork</div>
-        <div class="value-link">The orbit ring — CA connects and wraps around every team at JDI</div>
-      </div>
-    </div>
-    <div class="value-row reveal">
-      <div class="value-icon">🌱</div>
-      <div>
-        <div class="value-name">Health, Safety & Environment</div>
-        <div class="value-link">Green — the colour of growth, nature, and responsible progress</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- SECTION 4: JURY SCORING -->
-<div class="section">
-  <p class="section-tag reveal">04 — Jury Criteria</p>
-  <h2 class="reveal">How This Logo Scores</h2>
-  <p class="section-intro reveal">
-    The jury evaluates four things. Here is how this logo addresses each one honestly.
-  </p>
-  <div class="score-grid">
-    <div class="score-card top reveal">
-      <div class="score-number">20</div>
-      <div class="score-label">⭐ Alignment</div>
-      <div class="score-desc">Built directly from JDI's brand colours and connected to all 8 company values — the highest priority criterion</div>
-    </div>
-    <div class="score-card reveal">
-      <div class="score-number">15</div>
-      <div class="score-label">Originality</div>
-      <div class="score-desc">Globe combined with an analytics chart — a fresh way to show what CA does for the whole business</div>
-    </div>
-    <div class="score-card reveal">
-      <div class="score-number">10</div>
-      <div class="score-label">Impact</div>
-      <div class="score-desc">One glance tells you: data, global reach, forward momentum. Simple and memorable</div>
-    </div>
-    <div class="score-card reveal">
-      <div class="score-number">5</div>
-      <div class="score-label">Execution</div>
-      <div class="score-desc">PNG format, transparent background, professional quality — ready for any document or screen</div>
-    </div>
-  </div>
-  <div class="score-tip reveal">
-    <span>💡</span>
-    <span><strong>Alignment carries the most weight — 20 points.</strong> This logo was designed from JDI's brand identity outward. Every decision connects back to who JDI is and what CA stands for.</span>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- CLOSING -->
-<div class="closing">
-  <h2 class="reveal">A Personal Note</h2>
-  <p class="reveal">
-    As someone new to JDI, designing this logo was my way of understanding
-    what Corporate Analytics really means to this company.
-    I wanted to create something that felt like it already belonged here —
-    not something that needed to be explained, but something that speaks for itself.
-    <br/><br/>
-    I hope this logo can represent the great work this team does every day.
-  </p>
-  <div class="closing-name">— Mina T. Jouybari · Associate Data Analyst - Co-op</div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <span>Designed by <a href="https://mina-tj.github.io" target="_blank">Mina T. Jouybari</a> · Corporate Analytics Logo Contest 2026</span>
-  <span>J.D. Irving, Limited · Dieppe, NB</span>
-</footer>
-
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 50);
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => obs.observe(el));
-</script>
-</body>
-</html>
+￼
+A Personal Note
+As someone new to JDI, designing this logo was my way of understanding what Corporate Analytics really means to this company. I wanted to create something that felt like it already belonged here. Not something that needed to be explained, but something that speaks for itself.   I hope this logo can represent the great work this team does every day.
+Mina Tavakkoli Jouybari. Associate Data Analyst. Co-op
+￼
+Designed by Mina Tavakkoli Jouybari. Corporate Analytics Logo Contest 2026
+J.D. Irving, Limited. Dieppe, NB
